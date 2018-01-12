@@ -66,7 +66,7 @@
 
     });
 
-    // Auto scroll to top on page change... not working
+    // Auto scroll to top on page change. Credit given to https://github.com/rommelsantor/ng-bwdfwdscroll/blob/master/ng-bwdfwdscroll.js
     app.run(function _bwdFwdDetect($rootScope, $location) {
       
       $rootScope.path = $location.path();// stores only the current page being viewed  
