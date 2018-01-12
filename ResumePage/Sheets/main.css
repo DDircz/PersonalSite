@@ -1,0 +1,289 @@
+﻿/* Default background, etc.*/
+html,
+body {
+    /*background-color: #000044;*/
+    background-color: white;
+    height: 100%;
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden
+}
+
+
+/* Content Injection Section */
+#main {
+    min-height: 100%;
+    margin-bottom: -60px
+}
+
+
+/* Controls image div on home page */
+.home .main_image,
+.home .main_image img {
+    position: relative;
+    width: 100%;
+    height: auto
+}
+
+
+/* Controls text overlaying home page image */
+.home .main_image h2 {
+    position: absolute;
+    top: 50%;
+    left: 14%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    width: 70%;
+    color: white;
+    font: 35px Open Sans, Sans-Serif;
+    letter-spacing: 2px;
+    font-weight: 400
+}
+
+
+/* Home Page Text */
+.home .main_text p {
+    font-size: 26px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    line-height: 1.6em;
+    font-weight: 300;
+    margin-top: 70px;
+    padding-bottom: 90px;
+    width: 70%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 1px solid #e8e8e8
+}
+
+
+/* Home page 3 column grid */
+.home .col-sm-4 {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e8e8e8
+}
+
+.home .col-sm-4 .link_title {
+    color: gray;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    font-weight: 300;
+    text-decoration: none;
+    margin-left: 12px
+}
+
+.home .col-sm-4 a:hover,
+col-sm-4 a:focus {
+    color: black;
+    text-decoration: none
+}
+
+.home .col-sm-4 img {
+    height: auto;
+    width: 90%;
+    padding-top: 10px;
+    max-height: 360px;
+    max-width: 360px
+}
+
+.home .col-sm-4 img:hover {
+    opacity: .5
+}
+
+
+/* Career Page CSS */
+.career .title h2 {
+    margin-top: 100px;
+    color: gray;
+    text-align: center;
+    font: 35px Open Sans, Sans-Serif;
+    letter-spacing: 2px;
+    font-weight: 400
+}
+
+.career .flowchart img {
+    position: relative;
+    width: 250px;
+    height: auto;
+    margin-left: 100px;
+    margin-bottom: 80px
+}
+
+
+/* Contact Page CSS*/
+.contact .title h2 {
+    margin-top: 100px;
+    color: gray;
+    text-align: center;
+    font: 35px Open Sans, Sans-Serif;
+    letter-spacing: 2px;
+    font-weight: 400
+}
+
+.contact .subtitle h3 {
+    font-size: 26px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    line-height: 1.6em;
+    font-weight: 300;
+    border-bottom: 1px solid #e8e8e8
+}
+
+.contact .col-sm-4 {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e8e8e8
+}
+
+.contact .col-sm-4 .link_title {
+    color: gray;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    font-weight: 300;
+    text-decoration: none;
+    margin-left: 12px
+}
+
+.contact .col-sm-4 img {
+    height: auto;
+    width: 90%;
+    padding-top: 10px;
+    max-height: 360px;
+    max-width: 360px
+}
+
+
+/* NAVBAR CSS */
+
+/* Brand control */
+.navbar-brand {
+    color: black !important;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-right: 25px;
+    padding-top: 35px
+}
+
+
+/* Top Navbar Properties */
+.navbar-inverse {
+    background-color: white;
+    border-bottom: 1px solid #e8e8e8
+}
+
+
+/* Controls top links */
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: black !important
+}
+
+
+/* Controls alignment of all social media icons */
+.navbar-right {
+    padding-right: 20px
+}
+
+
+/* Controls social media icons when in expanded view*/
+.navbar-right>li {
+    position: relative;
+    float: right;
+    padding-top: 0
+}
+
+
+/* Sets minimum height of navbar at all times */
+.navbar-fixed-top {
+    min-height: 40px
+}
+
+
+/* Controls positioning of links when screen is at full width*/
+.navbar-nav>li>a {
+    min-height: 90px;
+    padding-top: 36px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase
+}
+
+
+/* Expand/collapse  Button */
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: black
+}
+
+.navbar-inverse .navbar-toggle .icon-bar:focus {
+    background-color: white
+}
+
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+    background-color: white
+}
+
+.navbar-toggle {
+    float: left;
+    margin-left: 15px;
+    margin-right: 0
+}
+
+
+/* */
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border-color: white
+}
+
+
+/* Control Footer formatting */
+.footer,
+.push {
+    background-color: white;
+    border-top: 1px solid #e8e8e8;
+    padding-top: 70px
+}
+
+#social {
+    margin: 0 auto;
+    padding-bottom: 25px;
+    display: inline-block
+}
+
+#social>a {
+    margin-right: 15px;
+    margin-left: 15px;
+    color: #9d9d9d
+}
+
+#social>a:hover {
+    color: black
+}
+
+
+/* Controls what happens when collapse button is active */
+@media (max-width: 767px) {
+    .navbar-nav>li>a {
+        min-height: 20px;
+        padding-top: 0px
+    }
+    .navbar-nav>li {
+        margin: 0 auto;
+        text-align: center;
+        position: relative
+    }
+    .navbar-brand {
+        padding-top: 15px;
+        margin: 0 auto;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%)
+    }
+    .home .col-sm-4 {
+        text-align: center
+    }
+}
