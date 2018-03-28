@@ -70,26 +70,8 @@
 
         $rootScope.$on('$locationChangeStart', function(event) {
             var newPath = $location.path(); 
-  
-            var bwd = !$rootScope.pathBwd.length ? null :  
-              $rootScope.pathBwd[$rootScope.pathBwd.length - 1];  
-          
-            var fwd = !$rootScope.pathFwd.length ? null :  
-              $rootScope.pathFwd[$rootScope.pathFwd.length - 1]; 
 
-            if (bwd == newPath) {  
-                $rootScope.pathBwd.pop();  
-                $rootScope.pathFwd.push($rootScope.path);  
-            }  
-
-            else if (fwd == newPath){
-                $rootScope.pathFwd.pop();
-                $rootScope.pathBwd.push($rootScope.path);  
-            }
-
-            else if ($rootScope.path != newPath) {
-                $rootScope.pathBwd.push($rootScope.path);
-                $rootScope.pathFwd = []; 
+            if ($rootScope.path != newPath) {
                 $('html,body').animate({ scrollTop: 0 }, 'fast');
             }
             $rootScope.path = newPath;  
